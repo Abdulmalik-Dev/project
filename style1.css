@@ -5,11 +5,15 @@
 body{
     width: 1340px;
 }
+
+/* For header style */
 header {
     margin: 6px 3px 6px 6px;
     height: 100px;
     background: rgb(51, 16, 248);
 }
+
+/* For  all ul in header */
 header ul{
     width: 300px;
     float: right;
@@ -18,21 +22,29 @@ header ul{
     text-align: center;
     list-style-type: none;
 }
+
+/* For  all links in ul */
 ul a{
     display: block;
     text-decoration: none;
     color: white;
 }
+
+/* hover For all links in ul */
 ul a:hover{
     background: white;
     color: black;
     margin: 5px;
 }
+
+/* For description span in top right page */
 span p{
     float: right;
     transform: translate(-70px,45px);
     font-size: 20px;
 }
+
+/* For span in header its profile image and its description */
 #headerSpan{
     margin-top: 10px;
     float: right;
@@ -42,12 +54,16 @@ span p{
     transform: translate(0px, -10px);
     animation: colors 6s 0s 2 alternate;
 }
+
+/* For profile in top right image */
 span img{
     float: right;
     width: 60px;
     border-radius: 50%;
     transform: translate(-5px , 8px);
 }
+
+/* For logo image in left page */
 #logo{
     width: 150px;
     height: 150px;
@@ -55,6 +71,8 @@ span img{
     transform: translate(60px, 50px);
     border: 2px black solid;
 }
+
+/* For discription logo image in left page */
 #logoP{
     position: absolute;
     bottom: 120px;
@@ -63,6 +81,8 @@ span img{
     text-align: center;
     border-bottom: 2px black solid;
 }
+
+/* For big outer main in center page */
 #main1{
     width: 1000px;
     height: 450px;
@@ -70,6 +90,8 @@ span img{
     float: right;
     margin: -7px  3px ;
 }
+
+/* For inner main in center page */
 #main2{
     width: 480px;
     height: 210px;
@@ -79,6 +101,8 @@ span img{
     top: 250px;
     animation: colors 6s 0s 2 alternate;
 }
+
+/* For discription image in inner main  */
 main h3{
     transform: translate(0px,60px);
     margin: 0px 60px;
@@ -86,11 +110,15 @@ main h3{
     border-bottom: 3px black solid;
     padding: 5px;
 }
+
+/* For image in inner main */
 main img{
     width: 230px;
     height: 80px;
     transform: translate(130px,70px);
 }
+
+/* For aside style */
 aside{
     width: 325px;
     height: 450px;
@@ -98,20 +126,28 @@ aside{
     transform: translate(3px,-3px);
     animation: colors 6s 0s 2 alternate;
 }
+
+/* For main its of images */
 #images{
     width: 1330px;
     margin: 1px 4px 10px 4px;
     padding-bottom: 40px;
     animation: colors 6s 0s 2 alternate;
 }
+
+/* For all images in buttom page its of courses */
 #img{
     width: 420px;
     height: 175px;
     transform: translate(30px, 20px);
 }
+
+/* For hover its of all images in buttom page its of courses */
 a img:hover{
     opacity: 0.6;
 }
+
+/* For animation style */
 @keyframes colors{
     10%{
         background: rgba(105, 240, 199);
