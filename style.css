@@ -115,7 +115,7 @@ main h3{
 /* For aside style */
 aside{
     width: calc((100% / 2) - 163px);
-    height: 450px;
+    height: auto;
     margin-top: 2px;
     transform: translate(3px,-3px);
     animation: colors 6s 0s 2 alternate;
@@ -123,6 +123,7 @@ aside{
 
 /* For main its of images */
 #images{
+    clear: both;
     width: auto;
     margin: 1px 4px 10px 4px;
     animation: colors 6s 0s 2 alternate;
@@ -131,6 +132,7 @@ aside{
 /* For all images in buttom page its of courses */
 #img{
     width: 15%;
+    margin-top: 2%;
     margin-left: 1%;
     height: 175px;
 }
@@ -156,8 +158,30 @@ a img:hover{
     }
 }
 
-/* Responsive codes */
-@media(max-width: 640px){
+/* Responsive codes  */
+
+@media(max-width: 450px){
+    #main2 {
+        transform: translate(5%, 25%);
+        width: 258px;
+    }
+    .main-img {
+        width: 230px;
+        height: 80px;
+        margin: 0px 10px;    
+    }
+    main h3 {
+        margin: 50px 0px;
+    }
+    #img {
+        width: 97%;
+    }
+    span p {
+        transform: translate(-40px,45px);
+        font-size: 15px;
+    }
+}
+@media(max-width: 640px) and (min-width: 451px){
     #main2 {
         width: 400px;
         position: absolute;
@@ -166,16 +190,29 @@ a img:hover{
     .main-img{ 
         margin: -30px 85px;
     }
-    
+}
+
+@media(max-width: 767px) and (min-width: 451px){
+    #main2 {
+        transform: translate(22%, 50%);
+    }
+    #img{
+        width: 48%;
+    }
 }
 
 @media(max-width: 767px){
 
     #headerSpan {
-        width: 100%;
+        width: 96%;
+        margin: 4% 5px 2px;
+        padding: 0px 6px;
     }
     header {
         clear: both;
+        width: 95%;
+        margin: 1px 1%;
+        padding: 0px 5px;
     }
     header ul {
         width: calc(100% / 3);
@@ -184,13 +221,9 @@ a img:hover{
         width: 99%;
         margin: 0px;
     }
-    #main2 {
-        transform: translate(22%, 50%);
-    }
     aside{
         clear: both;
         width: 98%;
-        height: 210px;
         margin: 4px;
         padding-top: 20px;
         text-align: center;
@@ -200,9 +233,6 @@ a img:hover{
     }
     #logoP {
         margin: 0px;
-    }
-    #img{
-        width: 48%;
     }
 }
 
